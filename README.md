@@ -38,9 +38,11 @@ of the race. (less than 30 cm). The RACECAR must not hit the white cone.
 
 ## Repository Structure
 
-├── 00_main.py              # Primary autonomous script for final race (final version code)
+```text
+.
+├── 00_main.py              # Primary autonomous script for final race
 ├── cone_slalom             # Cone slalom navigation module
-├── driving_in_shapes       # Driving in shapes
+├── driving_in_shapes       # Driving in shapes module
 ├── line_follower           # Color line tracking
 ├── pathfinding             # Pathfinding logic for vehicle trajectory planning
 ├── racecar_controller      # Vehicle motor and steering control wrapper
@@ -48,3 +50,4 @@ of the race. (less than 30 cm). The RACECAR must not hit the white cone.
 ├── stoplight_challenge     # Visual traffic light recognition module
 ├── wall_follower           # LiDAR safety stop and wall-following algorithms
 └── README.md               # Project documentation
+```
