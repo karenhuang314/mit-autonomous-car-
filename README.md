@@ -15,6 +15,7 @@
 
 ## Technical Design
 Course Traversal: The autonomous vehicle's steering angle is calculated based on the error offset between frame center and the central point of the contour. 
+
 Color Priority: When multiple colored lines are detected, the following hierarchy is implemented:
 Red > Green > Blue
 
