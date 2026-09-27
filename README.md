@@ -1,13 +1,28 @@
-# mit-autonomous-car-
+# MIT-Autonomous-Car
+
+### Hardware
+**Platform:** MIT RACECAR
+**Sensors:** 
+  * RGB Camera (Line detection & color classification)
+  * LiDAR (Obstacle detection)
+  * IMU (Angular velocity & acceleration)
+### Software
+* Python 3.12
+* Operating System: Ubuntu Linux / ROS (Robot Operating System)
+* RACECAR Library ('racecar_core')
+* OpenCV ('opencv-python')
+* NumPy ('numpy')
+
+## Technical Design
+Course Traversal: The autonomous vehicle's steering angle is calculated based on the error offset between frame center and the central point of the contour. 
+Color Priority: When multiple colored lines are detected, the following hierarchy is implemented:
+Red > Green > Blue
+
 Purpose: Write a script to enable fully autonomous behavior from the RACECAR. The
 RACECAR will traverse the obstacle course autonomously without human intervention.
 Once the start button is pressed, the RACECAR must drive through the course until it
 reaches the white cone at the end, in which it will then stop. You are disqualified if
 you stop too far from the cone or hit the cone.
-
-Note: There is no template code in this document to follow except for the RACECAR script 
-structure found in template.py. You are expected to use code written from previous labs
-to complete this challenge. Good luck!
 
 Expected Outcome: When the user runs the script, they must not be able to manually control
 the RACECAR. The RACECAR must move forward on its own, traverse through the course, and then
