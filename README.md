@@ -35,3 +35,15 @@ stop on its own.
 close enough to the cone such that it does not see the entirety of the white cone at the end
 of the race. (less than 30 cm). The RACECAR must not hit the white cone.
 """
+
+## Repository Structure
+
+├── 00_main.py              # Primary autonomous execution script
+├── sign_detection.py             # Deep Learning model training
+├── cone_slalom.py          # Cone slalom module
+├── lab_b.py                # Lab B module
+├── lab_c.py                # Lab C module
+├── lab_d.py                # Lab D module
+├── lab_e.py                # Lab E module
+├── lab_f.py                # Lab F module
+└── README.md               # Project documentation
